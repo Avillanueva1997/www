@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.FileReader", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -297,5 +296,3 @@ FileReader.prototype.readAsArrayBuffer = function (file) {
 };
 
 module.exports = FileReader;
-
-});

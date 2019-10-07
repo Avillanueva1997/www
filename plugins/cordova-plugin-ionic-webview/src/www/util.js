@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-ionic-webview.IonicWebView", function(require, exports, module) {
 var exec = require('cordova/exec');
 
 var WebView = {
@@ -29,4 +28,3 @@ var WebView = {
 }
 
 module.exports = WebView;
-});

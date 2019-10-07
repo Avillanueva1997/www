@@ -1,4 +1,3 @@
-cordova.define("phonegap-plugin-barcodescanner.BarcodeScanner", function(require, exports, module) {
 /**
  * cordova is available under the MIT License (2008).
  * See http://opensource.org/licenses/alphabetical for full text.
@@ -155,5 +154,3 @@ BarcodeScanner.prototype.scan = function (successCallback, errorCallback, config
 
         var barcodeScanner = new BarcodeScanner();
         module.exports = barcodeScanner;
-
-});

@@ -1,0 +1,50 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="event"></ion-back-button></ion-buttons>
+    <ion-title class="ion-text-capitalize">{{titulo}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="recargar($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-button class="clgreen" [routerLink]="['/nsala']">Crear sala</ion-button>
+              <!--<ion-button class="clblue" [routerLink]="['/scancodigo']"><ion-icon name="qr-scanner"></ion-icon></ion-button>-->
+          </ion-col>
+        </ion-row>    
+        <ion-row>
+          <ion-col>
+            <table>
+              <thead>
+              <tr class="radiustr">
+                <th class="radiusthleft">Código</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Aforo</th>
+                <th>Aforo Superado</th>
+                <th>Visualizar</th>
+                <th>Editar</th>
+                <th class="radiusthright">Eliminar</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let sala of salas">
+                <td>{{sala.codigo}}</td>
+                <td>{{sala.name}}</td>
+                <td>{{sala.tipo}}</td>
+                <td>{{sala.aforo}}</td>
+                <td>{{sala.aforosuperado}}</td>
+                <td><ion-button (click)="onWatch(sala)"><ion-icon slot="icon-only" name="eye"></ion-icon></ion-button></td>
+                <td><ion-button (click)="onEdit(sala)"><ion-icon slot="icon-only" name="create"></ion-icon></ion-button></td>
+                <td><ion-button (click)="onDelete(sala)"><ion-icon slot="icon-only" name="trash"></ion-icon></ion-button></td>
+              </tr>
+              </tbody>
+            </table>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+</ion-content>

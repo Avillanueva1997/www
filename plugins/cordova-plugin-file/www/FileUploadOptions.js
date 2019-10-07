@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.FileUploadOptions", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -40,5 +39,3 @@ var FileUploadOptions = function (fileKey, fileName, mimeType, params, headers, 
 };
 
 module.exports = FileUploadOptions;
-
-});

@@ -1,0 +1,52 @@
+$cBlue: #438DED;
+
+$cGreen: #2ad0a8;
+$cBlack: #000;
+$cWhite: #fff;
+
+
+@font-face{
+    font-family: Segoe-UI;
+    src: url("/assets/fonts/segoe-ui-light-2.ttf");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    font-family: Segoe-UI!important;
+}
+
+
+.image-slide {
+    width: 100% !important;
+    height: 250px;
+
+    // background-color: red;
+
+    /* Full height */
+    // height: 100%; 
+
+    /* Imagen centrada y colocada de forma elegante */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.post{
+    position: relative;
+    ion-slides{
+        position: relative;
+        z-index: 3;
+    }
+    .itmensaje{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba($cBlue, .9);
+        --background: rgba($cBlue, .9);
+        z-index: 5;
+        font-family: Segoe-UI!important;
+        color: $cWhite;
+    }
+}

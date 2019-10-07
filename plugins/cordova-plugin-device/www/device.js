@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-device.device", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -82,5 +81,3 @@ Device.prototype.getInfo = function (successCallback, errorCallback) {
 };
 
 module.exports = new Device();
-
-});

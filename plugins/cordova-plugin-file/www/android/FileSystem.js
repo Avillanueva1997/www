@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.androidFileSystem", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -47,5 +46,3 @@ module.exports = {
         return FILESYSTEM_PROTOCOL + '://localhost/' + this.name + path; // eslint-disable-line no-undef
     }
 };
-
-});

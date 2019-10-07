@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.FileUploadResult", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -29,5 +28,3 @@ module.exports = function FileUploadResult (size, code, content) {
     this.responseCode = code;
     this.response = content;
 };
-
-});

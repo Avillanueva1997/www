@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file-opener2.FileOpener2", function(require, exports, module) {
 /*jslint browser: true, devel: true, node: true, sloppy: true, plusplus: true*/
 /*global require, cordova */
 /*
@@ -50,5 +49,3 @@ FileOpener2.prototype.appIsInstalled = function (packageId, callbackContext) {
 };
 
 module.exports = new FileOpener2();
-
-});

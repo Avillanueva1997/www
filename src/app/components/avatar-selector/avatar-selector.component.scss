@@ -1,0 +1,31 @@
+
+img {
+    width: 120px;
+}
+
+.pick-avatar {
+    width: 80px;
+    opacity: 0.3;
+}
+
+.pick-avatar-seleccionado {
+    transition: opacity 0.5s linear;
+    opacity: 1 !important;
+}
+
+.avatarselect{
+    width: 50%;
+    margin: 0 auto;
+    ion-slide{
+        height: 80px;
+        ion-slide{
+            height: 80px;
+        }
+    }
+}
+
+@media screen and(max-width: 768px){
+    .avatarselect{
+        width: 100%;
+    }
+}

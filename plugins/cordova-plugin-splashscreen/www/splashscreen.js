@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-splashscreen.SplashScreen", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -32,5 +31,3 @@ var splashscreen = {
 };
 
 module.exports = splashscreen;
-
-});

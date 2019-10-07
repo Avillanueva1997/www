@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.ProgressEvent", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -66,5 +65,3 @@ var ProgressEvent = (function () {
 })();
 
 module.exports = ProgressEvent;
-
-});

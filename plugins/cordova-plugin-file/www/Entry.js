@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-file.Entry", function(require, exports, module) {
 /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -259,5 +258,3 @@ Entry.prototype.getParent = function (successCallback, errorCallback) {
 };
 
 module.exports = Entry;
-
-});
